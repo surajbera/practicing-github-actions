@@ -31,7 +31,8 @@ jobs:
           echo "Run number: ${{ github.run_number }}"
 
       - name: Print repo variable MY_VAR
-        run: echo "MY_VAR: ${{ vars.MY_VAR }}"
+        run: |
+          echo "MY_VAR: ${{ vars.MY_VAR }}"
 
       - name: Print env hierarchy (step level)
         env:
